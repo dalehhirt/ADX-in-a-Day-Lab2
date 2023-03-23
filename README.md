@@ -14,7 +14,7 @@ In order to receive the "ADX In a Day" digital badge, you will need to complete 
 
 #### Please allow us 10 working days to issue the badge
 
-<p align="center"><img src="/assets/images/badge.png" width="200"></p>
+<p align="center"><img src="./assets/images/badge.png" width="200"></p>
 
 ---
 ---
@@ -264,7 +264,7 @@ logsRaw
 ```
 
 Example result:<br>
-<img src="/assets/images/anomalies.png" width="1100">
+<img src="./assets/images/anomalies.png" width="1100">
 
 Reference:
 [ADX Anomaly Detection](https://docs.microsoft.com/en-us/azure/data-explorer/anomaly-detection#time-series-anomaly-detection)<br>
@@ -291,7 +291,7 @@ logsRaw
 | project Timestamp,ActualSize = format_bytes(ActualSize, 2),PredictedSize = format_bytes(PredictedSize, 2), AnomalyScore, AnomalyFlags // Defines which columns to return 
 | sort by abs(AnomalyScore) desc // Sorts results by anomaly score in descending ordering
 ```
-<img src="/assets/images/anomalies_table.png" width="800">
+<img src="./assets/images/anomalies_table.png" width="800">
 
 Looking at the query results, you can see that the query: <br>
 - Calculates an expected sum (of the file size) for each bucket.
@@ -348,7 +348,7 @@ Reference:
 
 Note: Below is just an example dashboard
 
-<img src="/assets/images/Challenge8-Task1-dashboard-v2.png" width="800">
+<img src="./assets/images/Challenge8-Task1-dashboard-v2.png" width="800">
 
   
 --- 
@@ -367,12 +367,12 @@ Reference:
 #### - Learn and get hands on experience with a full blown ADX cluster and advanced ADX topics like Materialized Views, scaling, security, geo mapping and more. 
 [Azure Data Explorer Microhack](https://github.com/Azure/azure-kusto-microhack)
 
-<img src="/assets/images/microhack_badge.png" width="200">
+<img src="./assets/images/microhack_badge.png" width="200">
 
 #### - Become a detective and solve some puzzles using Kusto Query Langugage! You can reuse the same free cluster that you have used to complete ADX-in-a-Day challenges.
 [Kusto Detective Agency](https://detective.kusto.io)
 
-<img src="/assets/images/kda_badge.png" width="200">
+<img src="./assets/images/kda_badge.png" width="200">
 
 ---
 
